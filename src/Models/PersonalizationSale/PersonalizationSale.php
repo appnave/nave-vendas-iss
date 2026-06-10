@@ -86,13 +86,13 @@ class PersonalizationSale extends Model
 
     public const STATUS = [
         'awaiting_sending_for_signature' => 'Awaiting sending for signature',
-        'awaiting_signature' => 'Awaiting signature',
-        'not_integrated' => 'Not integrated',
-        'finished' => 'Finished',
-        'canceled' => 'Canceled',
-        'awaiting_integration' => 'Awaiting integration',
-        'error_sending_for_signature' => 'Error sending for signature',
-        'integration_error' => 'Integration error',
+        'awaiting_signature'             => 'Awaiting signature',
+        'not_integrated'                 => 'Not integrated',
+        'finished'                       => 'Finished',
+        'canceled'                       => 'Canceled',
+        'awaiting_integration'           => 'Awaiting integration',
+        'error_sending_for_signature'    => 'Error sending for signature',
+        'integration_error'              => 'Integration error',
     ];
 
     public const TYPE = [
@@ -100,10 +100,10 @@ class PersonalizationSale extends Model
     ];
 
     public const LEGAL_DOCUMENT_STATUS = [
-        'not_sent' => 'Contract not sent',
-        'processing' => 'Processing',
+        'not_sent'           => 'Contract not sent',
+        'processing'         => 'Processing',
         'awaiting_signature' => 'Awaiting signature',
-        'finished' => 'Finished',
+        'finished'           => 'Finished',
     ];
 
     protected $fillable = [
@@ -123,11 +123,11 @@ class PersonalizationSale extends Model
     ];
 
     protected $casts = [
-        'amount' => 'float',
-        'incc' => 'boolean',
-        'integration' => 'boolean',
+        'amount'           => 'float',
+        'incc'             => 'boolean',
+        'integration'      => 'boolean',
         'integration_date' => 'datetime',
-        'sent_date' => 'datetime',
+        'sent_date'        => 'datetime',
     ];
 
     public static function boot(): void

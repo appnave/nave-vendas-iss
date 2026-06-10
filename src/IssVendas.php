@@ -52,10 +52,10 @@ class IssVendas implements IssVendasFactory
         $clientId = Config::get('hub.programatic_access.client_id');
         $secretId = Config::get('hub.programatic_access.client_secret');
         $response = Http::asForm()->post($hubUrl, [
-            'grant_type' => 'client_credentials',
-            'client_id' => $clientId,
+            'grant_type'    => 'client_credentials',
+            'client_id'     => $clientId,
             'client_secret' => $secretId,
-            'scope' => '*',
+            'scope'         => '*',
         ]);
 
         return $response->json('access_token');

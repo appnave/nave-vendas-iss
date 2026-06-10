@@ -1,61 +1,101 @@
-# This is my package iss-vendas
+# nave-vendas-iss
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/bildvitta/iss-vendas.svg?style=flat-square)](https://packagist.org/packages/bildvitta/iss-vendas)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/bildvitta/iss-vendas/Check%20&%20fix%20styling?label=code%20style)](https://github.com/bildvitta/iss-vendas/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/bildvitta/iss-vendas.svg?style=flat-square)](https://packagist.org/packages/bildvitta/iss-vendas)
+Pacote privado da Nave para integração com o serviço Vendas ISS. O consumo é feito por projetos Laravel via Composer com repositório VCS.
 
-## Installation
+## Visão geral
 
-You can install the package via composer:
+- Provider: `Bildvitta\IssVendas\IssVendasServiceProvider`
+- Alias disponível: `vendas`
+- Configuração publicada em `config/iss-vendas.php`
+- Conexão de banco auxiliar: `iss-vendas`
 
-```bash
-composer require bildvitta/iss-vendas
+## Requisitos
+
+- PHP `^8.1`
+- Laravel `8` a `12`
+- Composer 2
+- Acesso ao GitHub privado do pacote e das dependências privadas
+
+## Acesso aos Repositórios Privados
+
+No projeto cliente, adicione o repositório VCS em `composer.json`:
+
+```json
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/appnave/nave-vendas-iss"
+    }
+  ]
+}
 ```
 
-You can publish the config file with:
+Instale o pacote:
+
+```bash
+composer require appnave/nave-vendas-iss
+```
+
+Se o pacote ou suas dependências forem privados, o Composer precisa estar autenticado com um token que tenha acesso de leitura aos repositórios envolvidos.
+
+Autenticação local:
+
+```bash
+composer config -g github-oauth.github.com <YOUR_TOKEN>
+```
+
+GitHub Actions:
+
+```yaml
+env:
+  COMPOSER_AUTH: >-
+    {"github-oauth":{"github.com":"${{ secrets.GH_TOKEN }}"}}
+```
+
+## Instalação Local
+
+No projeto cliente:
+
 ```bash
 php artisan vendor:publish --tag="vendas-config"
 ```
 
-This is the contents of the published config file:
+Configure as variáveis conforme o ambiente:
 
-```php
-return [
-    'base_uri' => env('MS_VENDAS_BASE_URI', 'https://api-dev-vendas.nave.dev'),
-    'prefix' => env('MS_VENDAS_API_PREFIX', '/api')
-];
+```env
+MS_VENDAS_BASE_URI=https://api-dev-vendas.nave.dev
+MS_VENDAS_FRONT_URI=https://develop.vendas.nave.dev
+MS_VENDAS_API_PREFIX=/api
+
+MS_VENDAS_DB_URL=
+MS_VENDAS_DB_HOST=
+MS_VENDAS_DB_PORT=
+MS_VENDAS_DB_DATABASE=
+MS_VENDAS_DB_USERNAME=
+MS_VENDAS_DB_PASSWORD=
 ```
 
-## Usage
+Exemplo de uso:
 
 ```php
-use Bildvitta\IssVendas\IssVendas;
-use Illuminate\Http\Client\RequestException;
+use Bildvitta\IssVendas\Facades\IssVendas;
 
-try {
-    $vendas = new IssVendas();
-    $sale = $vendas->programmatic()->sale()->find('95c17b9b-a839-4bc7-89c0-6d23c54641a1');
-} catch (RequestException $e) {
-}
+$sale = IssVendas::programmatic()->sale()->find($id);
 ```
 
-## Changelog
+## Comandos Úteis
 
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+```bash
+php artisan vendor:publish --tag="vendas-config"
+composer test
+composer analyse
+composer check-style
+composer fix-style
+```
 
-## Contributing
+## Convenções
 
-Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
-
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
-
-## Credits
-
-- [BILD\jean.garcia](https://github.com/SOSTheBlack)
-- [All Contributors](../../contributors)
-
-## License
-
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+- O arquivo de configuração principal é `config/iss-vendas.php`.
+- A trait `Bildvitta\IssVendas\Traits\UsesVendasDB` registra a conexão `iss-vendas` com as credenciais em `MS_VENDAS_DB_*`.
+- O histórico de mudanças está em `CHANGELOG.md`.

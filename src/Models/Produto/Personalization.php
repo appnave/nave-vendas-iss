@@ -43,7 +43,7 @@ class Personalization extends Model
 
     protected $casts = [
         'is_active' => 'boolean',
-        'value' => 'decimal:2',
+        'value'     => 'decimal:2',
     ];
 
     public function __construct(array $attributes = [])

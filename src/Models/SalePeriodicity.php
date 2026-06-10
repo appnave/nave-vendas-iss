@@ -60,26 +60,26 @@ class SalePeriodicity extends Model
 
     public const PERIODICITY_LIST = [
         // produto
-        'financing' => 'Financiamento',
-        'fgts' => 'FGTS',
-        'subsidy' => 'Subsídio',
-        'down_payment' => 'Entrada',
-        'intermediate' => 'Intermediária',
-        'post_construction' => 'Pós-obra',
-        'monthly' => 'Mensal',
-        'bimonthly' => 'Bimestral',
-        'quarterly' => 'Trimestral',
-        'semiannual' => 'Semestral',
-        'yearly' => 'Anual',
+        'financing'          => 'Financiamento',
+        'fgts'               => 'FGTS',
+        'subsidy'            => 'Subsídio',
+        'down_payment'       => 'Entrada',
+        'intermediate'       => 'Intermediária',
+        'post_construction'  => 'Pós-obra',
+        'monthly'            => 'Mensal',
+        'bimonthly'          => 'Bimestral',
+        'quarterly'          => 'Trimestral',
+        'semiannual'         => 'Semestral',
+        'yearly'             => 'Anual',
         'conclusion_balance' => 'Saldo Conclusão',
-        'conclusion_keys' => 'Conclusão chaves',
+        'conclusion_keys'    => 'Conclusão chaves',
         //vendas
-        'signal' => 'Sinal',
-        'periodicity' => 'Periodicidade',
-        'final' => 'Final',
-        'single' => 'Única',
-        'single_financing' => 'Única - Financiamento',
-        'vehicle_exchange' => 'Dação em pagamento - Veículo',
+        'signal'                           => 'Sinal',
+        'periodicity'                      => 'Periodicidade',
+        'final'                            => 'Final',
+        'single'                           => 'Única',
+        'single_financing'                 => 'Única - Financiamento',
+        'vehicle_exchange'                 => 'Dação em pagamento - Veículo',
         'real_estate_development_exchange' => 'Dação em pagamento - Imóvel',
     ];
 
@@ -87,8 +87,8 @@ class SalePeriodicity extends Model
      * @const array[]
      */
     public const PAYMENT_METHOD = [
-        'bank_slip' => 'Boleto',
-        'bank' => 'Banco',
+        'bank_slip'   => 'Boleto',
+        'bank'        => 'Banco',
         'credit_card' => 'Cartão',
     ];
 
@@ -141,9 +141,9 @@ class SalePeriodicity extends Model
     ];
 
     protected $casts = [
-        'due_at' => 'date:Y-m-d',
+        'due_at'             => 'date:Y-m-d',
         'installment_amount' => 'real',
-        'editable' => 'boolean',
+        'editable'           => 'boolean',
     ];
 
     public function sale(): BelongsTo

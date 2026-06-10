@@ -8,9 +8,9 @@ return [
     'prefix' => env('MS_VENDAS_API_PREFIX', '/api'),
 
     'db' => [
-        'url' => env('MS_VENDAS_DB_URL'),
-        'host' => env('MS_VENDAS_DB_HOST'),
-        'port' => env('MS_VENDAS_DB_PORT'),
+        'url'      => env('MS_VENDAS_DB_URL'),
+        'host'     => env('MS_VENDAS_DB_HOST'),
+        'port'     => env('MS_VENDAS_DB_PORT'),
         'database' => env('MS_VENDAS_DB_DATABASE'),
         'username' => env('MS_VENDAS_DB_USERNAME'),
         'password' => env('MS_VENDAS_DB_PASSWORD'),

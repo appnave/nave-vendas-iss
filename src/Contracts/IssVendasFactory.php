@@ -11,8 +11,8 @@ interface IssVendasFactory
      */
     public const DEFAULT_HEADERS = [
         'content-type' => 'application/json',
-        'accept' => 'application/json',
-        'User-Agent' => 'ISS v0.0.1-alpha',
+        'accept'       => 'application/json',
+        'User-Agent'   => 'ISS v0.0.1-alpha',
     ];
 
     /**
