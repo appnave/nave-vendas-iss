@@ -25,44 +25,44 @@ class Sale extends Model
     public const STATUS = [
         'permutation' => 'Permutante',      // 10 - Permutante - Reserva para permutante
 
-        'simulation' => 'Simulação',        // 15 - Interesse - Unidade selecionada
+        'simulation'  => 'Simulação',        // 15 - Interesse - Unidade selecionada
         'in_approval' => 'Em aprovação',    // 15 - Interesse - Unidade selecionada
-        'reproved' => 'Recusada',           // 15 - Interesse - Unidade selecionada
-        'processing' => 'Processando',      // 15 - Interesse - Unidade selecionada
-        'failed' => 'Falhou',               // 15 - Interesse - Unidade selecionada
+        'reproved'    => 'Recusada',           // 15 - Interesse - Unidade selecionada
+        'processing'  => 'Processando',      // 15 - Interesse - Unidade selecionada
+        'failed'      => 'Falhou',               // 15 - Interesse - Unidade selecionada
 
-        'pre_sold' => 'Pré-Venda',          // 30 - Pré-venda - Proposta aprovada
+        'pre_sold'   => 'Pré-Venda',          // 30 - Pré-venda - Proposta aprovada
         'commercial' => 'Comercial',        // 35 - Comercial - Impressão do contrato
-        'legal' => 'Jurídico',              // 40 - Bild Jurídico / Vitta assinado - Validação comercial do contrato
-        'credit' => 'Crédito',              // 45 - Crédito imobiliário/Repasse - Validação jurídica do contrato
-        'sold' => 'Vendida',                // 50 - Vendido - Venda validada
+        'legal'      => 'Jurídico',              // 40 - Bild Jurídico / Vitta assinado - Validação comercial do contrato
+        'credit'     => 'Crédito',              // 45 - Crédito imobiliário/Repasse - Validação jurídica do contrato
+        'sold'       => 'Vendida',                // 50 - Vendido - Venda validada
         'distracted' => 'Distrato',         // 55 - Venda distratada - Venda distratada
-        'canceled' => 'Cancelada',          // 60 - Venda cancelada - Venda cancelada
+        'canceled'   => 'Cancelada',          // 60 - Venda cancelada - Venda cancelada
     ];
 
     public const COMMISSION_OPTIONS = [
-        'sales_team' => 'Equipe de Vendas',
+        'sales_team'           => 'Equipe de Vendas',
         'external_real_estate' => 'Imobiliária Externa',
     ];
 
     public const DEFAULT_COMMISSION = [
         'real_estate_broker' => 1.2,
-        'supervisor' => 0.5,
-        'manager' => 0.2,
-        'real_estate' => 5,
+        'supervisor'         => 0.5,
+        'manager'            => 0.2,
+        'real_estate'        => 5,
     ];
 
     public const LEGAL_DOCUMENT_STATUS = [
-        'not_sent' => 'Contrato não enviado',
-        'processing' => 'Em Processamento',
+        'not_sent'           => 'Contrato não enviado',
+        'processing'         => 'Em Processamento',
         'awaiting_signature' => 'Aguardando assinatura',
-        'finished' => 'Finalizado',
+        'finished'           => 'Finalizado',
     ];
 
     public const LEGAL_DOCUMENT_SIGNATURE_TYPE = [
         'digital_not_presencial' => 'Assinatura digital',
-        'digital_is_presencial' => 'Assinatura via tablet',
-        'printed' => 'Impresso',
+        'digital_is_presencial'  => 'Assinatura via tablet',
+        'printed'                => 'Impresso',
     ];
 
     protected $fillable = [
@@ -108,23 +108,23 @@ class Sale extends Model
     ];
 
     protected $casts = [
-        'special_needs' => 'bool',
-        'fgts' => 'float',
-        'financing' => 'float',
-        'subsidy' => 'float',
-        'input' => 'float',
-        'price_total' => 'float',
+        'special_needs'             => 'bool',
+        'fgts'                      => 'float',
+        'financing'                 => 'float',
+        'subsidy'                   => 'float',
+        'input'                     => 'float',
+        'price_total'               => 'float',
         'original_unit_fixed_price' => 'float',
         'original_unit_table_price' => 'float',
-        'commission_manager' => 'float',
-        'commission_supervisor' => 'float',
-        'commission_seller' => 'float',
-        'commission_real_estate' => 'float',
-        'justified_at' => 'datetime',
-        'signed_contract_at' => 'datetime',
-        'is_insurance' => 'bool',
-        'bill_paid_at' => 'datetime',
-        'commission_declaration' => 'boolean',
+        'commission_manager'        => 'float',
+        'commission_supervisor'     => 'float',
+        'commission_seller'         => 'float',
+        'commission_real_estate'    => 'float',
+        'justified_at'              => 'datetime',
+        'signed_contract_at'        => 'datetime',
+        'is_insurance'              => 'bool',
+        'bill_paid_at'              => 'datetime',
+        'commission_declaration'    => 'boolean',
     ];
 
     public function unit(): BelongsTo

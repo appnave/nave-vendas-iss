@@ -111,39 +111,39 @@ class PersonalizationAdditive extends Model
 
     public const STATUS = [
         'awaiting_sending_for_signature' => 'Awaiting sending for signature',
-        'awaiting_signature' => 'Awaiting signature',
-        'not_integrated' => 'Not integrated',
-        'finished' => 'Finished',
-        'canceled' => 'Canceled',
-        'awaiting_integration' => 'Awaiting integration',
-        'error_sending_for_signature' => 'Error sending for signature',
+        'awaiting_signature'             => 'Awaiting signature',
+        'not_integrated'                 => 'Not integrated',
+        'finished'                       => 'Finished',
+        'canceled'                       => 'Canceled',
+        'awaiting_integration'           => 'Awaiting integration',
+        'error_sending_for_signature'    => 'Error sending for signature',
     ];
 
     public const ADDITIVE_TYPE = [
-        'inclusion_with_value' => 'Inclusion with value',
-        'inclusion_without_value' => 'Inclusion without value',
-        'replacement_with_value' => 'Replacement with value',
+        'inclusion_with_value'      => 'Inclusion with value',
+        'inclusion_without_value'   => 'Inclusion without value',
+        'replacement_with_value'    => 'Replacement with value',
         'replacement_without_value' => 'Replacement without value',
-        'removal' => 'Removal',
+        'removal'                   => 'Removal',
     ];
 
     public const LEGAL_DOCUMENT_STATUS = [
-        'not_sent' => 'Contract not sent',
-        'processing' => 'Processing',
+        'not_sent'           => 'Contract not sent',
+        'processing'         => 'Processing',
         'awaiting_signature' => 'Awaiting signature',
-        'finished' => 'Finished',
+        'finished'           => 'Finished',
     ];
 
     public const OPERATION = [
-        'addition' => 'Addition',
+        'addition'    => 'Addition',
         'subtraction' => 'Subtraction',
     ];
 
     public const DISCOUNT_FORM = [
-        'in_the_next_installment' => 'In the next installment',
+        'in_the_next_installment'         => 'In the next installment',
         'dilute_in_the_next_installments' => 'Dilute in the next installments',
-        'in_the_last_installment' => 'In the last installment',
-        'bank_transfer' => 'Bank transfer',
+        'in_the_last_installment'         => 'In the last installment',
+        'bank_transfer'                   => 'Bank transfer',
     ];
 
     protected $fillable = [
@@ -172,16 +172,16 @@ class PersonalizationAdditive extends Model
     ];
 
     protected $casts = [
-        'actual_value' => 'float',
-        'additive_value' => 'float',
-        'amount' => 'float',
-        'is_integrated' => 'boolean',
-        'integration_sent_date' => 'datetime',
-        'integration_date' => 'datetime',
-        'incc' => 'boolean',
-        'new_personalizations' => 'object',
+        'actual_value'             => 'float',
+        'additive_value'           => 'float',
+        'amount'                   => 'float',
+        'is_integrated'            => 'boolean',
+        'integration_sent_date'    => 'datetime',
+        'integration_date'         => 'datetime',
+        'incc'                     => 'boolean',
+        'new_personalizations'     => 'object',
         'removed_personalizations' => 'object',
-        'added_personalizations' => 'object',
+        'added_personalizations'   => 'object',
     ];
 
     public static function boot(): void

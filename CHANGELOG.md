@@ -6,65 +6,65 @@ All notable changes to `iss-vendas` will be documented in this file.
 
 ### What's Changed
 
-* Bump actions/checkout from 4 to 6 by @dependabot[bot] in https://github.com/bildvitta/iss-vendas/pull/66
-* Update develop by @leandrohago in https://github.com/bildvitta/iss-vendas/pull/67
-* Feature/add sale step by @leandrohago in https://github.com/bildvitta/iss-vendas/pull/68
-* v0.0.19 by @leandrohago in https://github.com/bildvitta/iss-vendas/pull/69
+* Bump actions/checkout from 4 to 6 by @dependabot[bot] in https://github.com/appnave/nave-vendas-iss/pull/66
+* Update develop by @leandrohago in https://github.com/appnave/nave-vendas-iss/pull/67
+* Feature/add sale step by @leandrohago in https://github.com/appnave/nave-vendas-iss/pull/68
+* v0.0.19 by @leandrohago in https://github.com/appnave/nave-vendas-iss/pull/69
 
-**Full Changelog**: https://github.com/bildvitta/iss-vendas/compare/v0.0.18...v0.0.19
+**Full Changelog**: https://github.com/appnave/nave-vendas-iss/compare/v0.0.18...v0.0.19
 
 ## v0.0.18 - 2025-09-18
 
-**Full Changelog**: https://github.com/bildvitta/iss-vendas/compare/v0.0.17...v0.0.18
+**Full Changelog**: https://github.com/appnave/nave-vendas-iss/compare/v0.0.17...v0.0.18
 
 ## v0.0.17 - 2025-06-23
 
 ### What's Changed
 
-* Added customer model by @fabiomartins1 in https://github.com/bildvitta/iss-vendas/pull/63
+* Added customer model by @fabiomartins1 in https://github.com/appnave/nave-vendas-iss/pull/63
 
-**Full Changelog**: https://github.com/bildvitta/iss-vendas/compare/v0.0.16...v0.0.17
+**Full Changelog**: https://github.com/appnave/nave-vendas-iss/compare/v0.0.16...v0.0.17
 
 ## v0.0.16 - 2025-02-24
 
 ### What's Changed
 
-* Sale models by @fabiomartins1 in https://github.com/bildvitta/iss-vendas/pull/60
+* Sale models by @fabiomartins1 in https://github.com/appnave/nave-vendas-iss/pull/60
 
 ### New Contributors
 
-* @fabiomartins1 made their first contribution in https://github.com/bildvitta/iss-vendas/pull/60
+* @fabiomartins1 made their first contribution in https://github.com/appnave/nave-vendas-iss/pull/60
 
-**Full Changelog**: https://github.com/bildvitta/iss-vendas/compare/v0.0.15...v0.0.16
+**Full Changelog**: https://github.com/appnave/nave-vendas-iss/compare/v0.0.15...v0.0.16
 
 ## v0.0.15 - 2024-08-22
 
 ### What's Changed
 
-* Bump dependabot/fetch-metadata from 1.3.4 to 1.3.5 by @dependabot in https://github.com/bildvitta/iss-vendas/pull/34
-* Bump actions/checkout from 3.1.0 to 3.2.0 by @dependabot in https://github.com/bildvitta/iss-vendas/pull/36
-* Bump actions/checkout from 3.2.0 to 3.3.0 by @dependabot in https://github.com/bildvitta/iss-vendas/pull/37
-* Bump dependabot/fetch-metadata from 1.3.5 to 1.3.6 by @dependabot in https://github.com/bildvitta/iss-vendas/pull/38
-* Bump actions/checkout from 3.3.0 to 3.4.0 by @dependabot in https://github.com/bildvitta/iss-vendas/pull/39
-* Bump actions/checkout from 3.4.0 to 3.5.0 by @dependabot in https://github.com/bildvitta/iss-vendas/pull/40
-* Bump actions/checkout from 3.5.0 to 3.5.2 by @dependabot in https://github.com/bildvitta/iss-vendas/pull/41
-* Bump dependabot/fetch-metadata from 1.3.6 to 1.4.0 by @dependabot in https://github.com/bildvitta/iss-vendas/pull/42
-* Bump dependabot/fetch-metadata from 1.4.0 to 1.5.1 by @dependabot in https://github.com/bildvitta/iss-vendas/pull/43
-* Bump actions/checkout from 3.5.2 to 3.5.3 by @dependabot in https://github.com/bildvitta/iss-vendas/pull/44
-* Bump dependabot/fetch-metadata from 1.5.1 to 1.6.0 by @dependabot in https://github.com/bildvitta/iss-vendas/pull/45
-* Bump actions/checkout from 3.5.3 to 3.6.0 by @dependabot in https://github.com/bildvitta/iss-vendas/pull/46
-* Programmatic Sales integration removal by @michaelnakamura in https://github.com/bildvitta/iss-vendas/pull/51
-* Update develop by @leandrohago in https://github.com/bildvitta/iss-vendas/pull/52
-* Merge pull request #52 from bildvitta/main by @leandrohago in https://github.com/bildvitta/iss-vendas/pull/53
-* Criar histórico do pagamento de sinal no vendas by @leandrohago in https://github.com/bildvitta/iss-vendas/pull/54
-* Adicionando models do Vendas para acessar via Banco by @zerossB in https://github.com/bildvitta/iss-vendas/pull/58
-* Merge Develop into Master by @zerossB in https://github.com/bildvitta/iss-vendas/pull/59
+* Bump dependabot/fetch-metadata from 1.3.4 to 1.3.5 by @dependabot in https://github.com/appnave/nave-vendas-iss/pull/34
+* Bump actions/checkout from 3.1.0 to 3.2.0 by @dependabot in https://github.com/appnave/nave-vendas-iss/pull/36
+* Bump actions/checkout from 3.2.0 to 3.3.0 by @dependabot in https://github.com/appnave/nave-vendas-iss/pull/37
+* Bump dependabot/fetch-metadata from 1.3.5 to 1.3.6 by @dependabot in https://github.com/appnave/nave-vendas-iss/pull/38
+* Bump actions/checkout from 3.3.0 to 3.4.0 by @dependabot in https://github.com/appnave/nave-vendas-iss/pull/39
+* Bump actions/checkout from 3.4.0 to 3.5.0 by @dependabot in https://github.com/appnave/nave-vendas-iss/pull/40
+* Bump actions/checkout from 3.5.0 to 3.5.2 by @dependabot in https://github.com/appnave/nave-vendas-iss/pull/41
+* Bump dependabot/fetch-metadata from 1.3.6 to 1.4.0 by @dependabot in https://github.com/appnave/nave-vendas-iss/pull/42
+* Bump dependabot/fetch-metadata from 1.4.0 to 1.5.1 by @dependabot in https://github.com/appnave/nave-vendas-iss/pull/43
+* Bump actions/checkout from 3.5.2 to 3.5.3 by @dependabot in https://github.com/appnave/nave-vendas-iss/pull/44
+* Bump dependabot/fetch-metadata from 1.5.1 to 1.6.0 by @dependabot in https://github.com/appnave/nave-vendas-iss/pull/45
+* Bump actions/checkout from 3.5.3 to 3.6.0 by @dependabot in https://github.com/appnave/nave-vendas-iss/pull/46
+* Programmatic Sales integration removal by @michaelnakamura in https://github.com/appnave/nave-vendas-iss/pull/51
+* Update develop by @leandrohago in https://github.com/appnave/nave-vendas-iss/pull/52
+* Merge pull request #52 from bildvitta/main by @leandrohago in https://github.com/appnave/nave-vendas-iss/pull/53
+* Criar histórico do pagamento de sinal no vendas by @leandrohago in https://github.com/appnave/nave-vendas-iss/pull/54
+* Adicionando models do Vendas para acessar via Banco by @zerossB in https://github.com/appnave/nave-vendas-iss/pull/58
+* Merge Develop into Master by @zerossB in https://github.com/appnave/nave-vendas-iss/pull/59
 
 ### New Contributors
 
-* @leandrohago made their first contribution in https://github.com/bildvitta/iss-vendas/pull/52
+* @leandrohago made their first contribution in https://github.com/appnave/nave-vendas-iss/pull/52
 
-**Full Changelog**: https://github.com/bildvitta/iss-vendas/compare/v0.0.14...v0.0.15
+**Full Changelog**: https://github.com/appnave/nave-vendas-iss/compare/v0.0.14...v0.0.15
 
 ## v0.0.14 - 2022-11-04
 
@@ -86,14 +86,14 @@ Programmatic users can now update sales
 
 ### What's Changed
 
-- Feature/import customer by @noemimpimentel in https://github.com/bildvitta/iss-vendas/pull/21
-- Merging develop into main by @noemimpimentel in https://github.com/bildvitta/iss-vendas/pull/22
+- Feature/import customer by @noemimpimentel in https://github.com/appnave/nave-vendas-iss/pull/21
+- Merging develop into main by @noemimpimentel in https://github.com/appnave/nave-vendas-iss/pull/22
 
 ### New Contributors
 
-- @noemimpimentel made their first contribution in https://github.com/bildvitta/iss-vendas/pull/21
+- @noemimpimentel made their first contribution in https://github.com/appnave/nave-vendas-iss/pull/21
 
-**Full Changelog**: https://github.com/bildvitta/iss-vendas/compare/V0.0.8...v0.0.9
+**Full Changelog**: https://github.com/appnave/nave-vendas-iss/compare/V0.0.8...v0.0.9
 
 ## V0.0.8 - 2022-05-29
 
@@ -103,46 +103,46 @@ Sale Facts Support Implementation
 
 ## What's Changed
 
-- Add sales integrations endpoint by @paulodavanco in https://github.com/bildvitta/iss-vendas/pull/15
-- Add Laravel 7 support by @paulodavanco in https://github.com/bildvitta/iss-vendas/pull/16
-- Develop by @paulodavanco in https://github.com/bildvitta/iss-vendas/pull/17
+- Add sales integrations endpoint by @paulodavanco in https://github.com/appnave/nave-vendas-iss/pull/15
+- Add Laravel 7 support by @paulodavanco in https://github.com/appnave/nave-vendas-iss/pull/16
+- Develop by @paulodavanco in https://github.com/appnave/nave-vendas-iss/pull/17
 
-**Full Changelog**: https://github.com/bildvitta/iss-vendas/compare/v0.0.5...v0.0.6
+**Full Changelog**: https://github.com/appnave/nave-vendas-iss/compare/v0.0.5...v0.0.6
 
 ## Add Real Estate Development search option - 2022-04-27
 
 ## What's Changed
 
-- Bump dependabot/fetch-metadata from 1.3.0 to 1.3.1 by @dependabot in https://github.com/bildvitta/iss-vendas/pull/10
-- Real estate development programmatic search by @paulodavanco in https://github.com/bildvitta/iss-vendas/pull/11
-- Develop by @paulodavanco in https://github.com/bildvitta/iss-vendas/pull/12
+- Bump dependabot/fetch-metadata from 1.3.0 to 1.3.1 by @dependabot in https://github.com/appnave/nave-vendas-iss/pull/10
+- Real estate development programmatic search by @paulodavanco in https://github.com/appnave/nave-vendas-iss/pull/11
+- Develop by @paulodavanco in https://github.com/appnave/nave-vendas-iss/pull/12
 
-**Full Changelog**: https://github.com/bildvitta/iss-vendas/compare/v0.0.3...v0.0.4
+**Full Changelog**: https://github.com/appnave/nave-vendas-iss/compare/v0.0.3...v0.0.4
 
 ## v0.0.2 - 2022-01-20
 
 ## What's Changed
 
-- Add front_uri to config file by @paulodavanco in https://github.com/bildvitta/iss-vendas/pull/2
-- Develop by @paulodavanco in https://github.com/bildvitta/iss-vendas/pull/3
+- Add front_uri to config file by @paulodavanco in https://github.com/appnave/nave-vendas-iss/pull/2
+- Develop by @paulodavanco in https://github.com/appnave/nave-vendas-iss/pull/3
 
 ## New Contributors
 
-- @paulodavanco made their first contribution in https://github.com/bildvitta/iss-vendas/pull/2
+- @paulodavanco made their first contribution in https://github.com/appnave/nave-vendas-iss/pull/2
 
-**Full Changelog**: https://github.com/bildvitta/iss-vendas/compare/v0.0.1...v0.0.2
+**Full Changelog**: https://github.com/appnave/nave-vendas-iss/compare/v0.0.1...v0.0.2
 
 ## v0.0.1 - 2021-12-13
 
 ## What's Changed
 
-- Develop by @SOSTheBlack in https://github.com/bildvitta/iss-vendas/pull/1
+- Develop by @SOSTheBlack in https://github.com/appnave/nave-vendas-iss/pull/1
 
 ## New Contributors
 
-- @SOSTheBlack made their first contribution in https://github.com/bildvitta/iss-vendas/pull/1
+- @SOSTheBlack made their first contribution in https://github.com/appnave/nave-vendas-iss/pull/1
 
-**Full Changelog**: https://github.com/bildvitta/iss-vendas/commits/v0.0.1
+**Full Changelog**: https://github.com/appnave/nave-vendas-iss/commits/v0.0.1
 
 ## 1.0.0 - 202X-XX-XX
 
