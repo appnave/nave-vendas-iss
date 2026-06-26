@@ -29,4 +29,9 @@ class Customer implements CustomerContract
             ['ref_uuid' => $customer_uuid]
         )->throw()->object();
     }
+
+    public function documents(): Document
+    {
+        return new Document($this->programmatic);
+    }
 }
