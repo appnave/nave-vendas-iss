@@ -19,7 +19,7 @@
     "require": {
         "php": "^8.1",
         "illuminate/contracts": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
-        "bildvitta/sp-produto": "^0.1",
+        "appnave/nave-cadastros-iss": "^2.0",
         "spatie/laravel-package-tools": "^1.9.2"
     },
     "require-dev": {
@@ -58,6 +58,12 @@
             "vendor/bin/pint --parallel"
         ]
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/appnave/nave-cadastros-iss"
+        }
+    ],
     "config": {
         "sort-packages": true,
         "allow-plugins": {
