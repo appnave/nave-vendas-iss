@@ -61,7 +61,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/appnave/nave-cadastros-sp"
+            "url": "https://github.com/appnave/nave-cadastros-sp.git"
         }
     ],
     "config": {
