@@ -19,4 +19,12 @@ class Document implements DocumentContract
             sprintf(self::ENDPOINT_VALIDATE, $customerUuid)
         )->throw()->object();
     }
+
+    public function deleteValidation(string $customerUuid, array $data)
+    {
+        return $this->programmatic->vendas->request->post(
+            sprintf(self::ENDPOINT_DELETE_VALIDATION, $customerUuid),
+            $data
+        )->throw()->object();
+    }
 }
